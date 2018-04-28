@@ -4,4 +4,4 @@ Hello world. I'm Vishal, a 3rd yr CSE undergrad from Chennai, India. While most 
 
 #### PDF RESUME : [bit.ly/vguptaresume](http://bit.ly/vguptaresume)
 #### COMPLETE LIST OF OPEN SOURCES CONTRIBUTIONS, PROJECTS AND AWARDS : [py-ranoid.github.io/Resume](http://py-ranoid.github.io/Resume)
-### SSN Intranet Files : [tiny.cc/ssncse6](tiny.cc/ssncse6)
+### SSN Intranet Files : [tiny.cc/ssncse6](http://tiny.cc/ssncse6)
