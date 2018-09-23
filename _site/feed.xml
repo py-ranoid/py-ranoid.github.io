@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-23T08:24:07+05:30</updated><id>http://localhost:4000/</id><title type="html">Vishal Gupta</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2016-02-24T22:48:00+05:30</published><updated>2016-02-24T22:48:00+05:30</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-23T09:26:58+05:30</updated><id>http://localhost:4000/</id><title type="html">Vishal Gupta</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Title</title><link href="http://localhost:4000/template/" rel="alternate" type="text/html" title="Title" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/template</id><content type="html" xml:base="http://localhost:4000/template/">&lt;h2 id=&quot;le-content&quot;&gt;Le content&lt;/h2&gt;
+
+&lt;p&gt;More &lt;strong&gt;markdown&lt;/strong&gt; content&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name>johndoe</name></author><category term="project" /><category term="jekyll" /><summary type="html">Le content</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png" /></entry><entry><title type="html">Init : If you can’t make it, fork it.</title><link href="http://localhost:4000/init/" rel="alternate" type="text/html" title="Init : If you can't make it, fork it." /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/init</id><content type="html" xml:base="http://localhost:4000/init/">&lt;p&gt;Do you&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;need your own site ?&lt;/li&gt;
+  &lt;li&gt;need your own site with a blog ?&lt;/li&gt;
+  &lt;li&gt;need your own site with a blog but can’t code front-end ?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Welcome to &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. 
+It lets you “transform your plain text into static websites and blogs”.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-create-your-own-version-of-this-site&quot;&gt;How to create your own (version of this) site&lt;/h2&gt;
+&lt;h3 id=&quot;step-1--setting-up-github-pages&quot;&gt;Step 1 : Setting up Github Pages&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create a &lt;a href=&quot;www.github.com&quot;&gt;Github&lt;/a&gt; account if you don’t have one.&lt;/li&gt;
+  &lt;li&gt;Create a repository called &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;This lets you use Github Pages to host static webpages (fixed content)&lt;/li&gt;
+  &lt;li&gt;Clone the repository on your local machine with
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git clone https://github.com/username/username.github.io.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;step---2--getting-athis-theme&quot;&gt;Step - 2 : Getting a/this theme&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Find a &lt;a href=&quot;http://drjekyllthemes.github.io/&quot;&gt;Jekyll theme&lt;/a&gt; that works for you. Each theme has a link to its source code and emo below it.&lt;/li&gt;
+  &lt;li&gt;If you’d like to use the theme I’m using, check out the &lt;a href=&quot;http://koppl.in/indigo/&quot;&gt;demo&lt;/a&gt; though isn’t my site one :laughing: ?&lt;/li&gt;
+  &lt;li&gt;Show sergiokopplin some ❤️ by adding a ⭐️ to the &lt;a href=&quot;https://github.com/sergiokopplin/indigo&quot;&gt;repository&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Clone the repository on your local machine with
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://github.com/sergiokopplin/indigo.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;h3 id=&quot;step---3--hosting-your-jekyll-site&quot;&gt;Step - 3 : Hosting your Jekyll site&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Optional : If you’d like to experiment with your site before you push it, make a branch with &lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout -b beta&lt;/code&gt;. However you can only host your github page from the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch so all your changes from &lt;code class=&quot;highlighter-rouge&quot;&gt;beta&lt;/code&gt; will have to be merged into &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Copy the theme files to your GH pages folder (after cloning)
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  cd username.github.io
+  cp ../indigo/* -r .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add, commit and push your changes to github.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git add .
+  git commit -m &quot;Added theme files&quot;
+  git push origin master  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;More &lt;strong&gt;markdown&lt;/strong&gt; content&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;icon-made-by-freepik-from-wwwflaticoncom&quot;&gt;Icon made by &lt;a href=&quot;https://www.flaticon.com/authors/freepik&quot;&gt;Freepik&lt;/a&gt; from www.flaticon.com&lt;/h2&gt;</content><author><name>johndoe</name></author><category term="project" /><category term="jekyll" /><summary type="html">Do you need your own site ? need your own site with a blog ? need your own site with a blog but can’t code front-end ?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/init.png" /></entry><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2016-02-24T22:48:00+05:30</published><updated>2016-02-24T22:48:00+05:30</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
 
 &lt;p&gt;You can pick as item to see how to apply in markdown.&lt;/p&gt;
 
@@ -328,25 +379,4 @@ It’s sometimes handy for breaking things up.&lt;/p&gt;
         &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#hamburguer__open'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fadeIn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fast'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>johndoe</name></author><category term="blog" /><category term="markdown" /><category term="elements" /><summary type="html">Basic formatting</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">:ramen: Indigo, minimalist jekyll theme</title><link href="http://localhost:4000/indigo-jekyll-theme/" rel="alternate" type="text/html" title=":ramen: Indigo, minimalist jekyll theme" /><published>2016-01-23T22:10:00+05:30</published><updated>2016-01-23T22:10:00+05:30</updated><id>http://localhost:4000/indigo-jekyll-theme</id><content type="html" xml:base="http://localhost:4000/indigo-jekyll-theme/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Example of project - Indigo Minimalist Jekyll Template - &lt;a href=&quot;http://sergiokopplin.github.io/indigo/&quot;&gt;Demo&lt;/a&gt;. This is a simple and minimalist template for Jekyll for those who likes to eat noodles.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;What has inside?&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Gulp&lt;/li&gt;
-  &lt;li&gt;BrowserSync&lt;/li&gt;
-  &lt;li&gt;Stylus&lt;/li&gt;
-  &lt;li&gt;SVG&lt;/li&gt;
-  &lt;li&gt;Travis&lt;/li&gt;
-  &lt;li&gt;No JS&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F&quot;&gt;98/100&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://sergiokopplin.github.io/indigo/&quot;&gt;Check it out&lt;/a&gt; here.
-If you need some help, just &lt;a href=&quot;http://github.com/sergiokopplin/indigo/issues&quot;&gt;tell me&lt;/a&gt;.&lt;/p&gt;</content><author><name>johndoe</name></author><category term="project" /><category term="jekyll" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png" /></entry></feed>
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>johndoe</name></author><category term="blog" /><category term="markdown" /><category term="elements" /><summary type="html">Basic formatting</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry></feed>
