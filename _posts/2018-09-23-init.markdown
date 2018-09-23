@@ -1,0 +1,61 @@
+---
+title: "Init : If you can't make it, fork it."
+layout: post
+date: 2018-09-23 08:36
+tag: jekyll
+image: ../assets/images/init.png
+headerImage: true
+projects: true
+hidden: False
+description: "How to create your own site"
+category: project
+author: johndoe
+externalLink: false
+
+---
+
+Do you 
+- need your own site ?
+- need your own site with a blog ? 
+- need your own site with a blog but can't code front-end ?
+
+Welcome to [Jekyll](https://jekyllrb.com/). 
+It lets you "transform your plain text into static websites and blogs".
+
+## How to create your own (version of this) site
+### Step 1 : Setting up Github Pages
+- Create a [Github](www.github.com) account if you don't have one.
+- Create a repository called `<username>.github.io`.
+- This lets you use Github Pages to host static webpages (fixed content)
+- Clone the repository on your local machine with 
+    ```
+    git clone https://github.com/username/username.github.io.git
+    ```
+
+### Step - 2 : Getting a/this theme
+- Find a [Jekyll theme](http://drjekyllthemes.github.io/) that works for you. Each theme has a link to its source code and emo below it.
+- If you'd like to use the theme I'm using, check out the [demo](http://koppl.in/indigo/) though isn't my site one :laughing: ?
+- Show sergiokopplin some ❤️ by adding a ⭐️ to the [repository](https://github.com/sergiokopplin/indigo)
+- Clone the repository on your local machine with 
+  ```
+  https://github.com/sergiokopplin/indigo.git
+  ```
+### Step - 3 : Hosting your Jekyll site
+- Optional : If you'd like to experiment with your site before you push it, make a branch with `git checkout -b beta`. However you can only host your github page from the `master` branch so all your changes from `beta` will have to be merged into `master`. 
+- Copy the theme files to your GH pages folder (after cloning)
+    ```
+    cd username.github.io
+    cp ../indigo/* -r .
+    ```
+- Add, commit and push your changes to github.
+    ```
+    git add .
+    git commit -m "Added theme files"
+    git push origin master  
+    ```
+More **markdown** content
+
+
+
+Icon made by [Freepik](https://www.flaticon.com/authors/freepik) from www.flaticon.com 
+---
