@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-23T10:48:15+05:30</updated><id>http://localhost:4000/</id><title type="html">Vishal Gupta</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Blog Title</title><link href="http://localhost:4000/template/" rel="alternate" type="text/html" title="Blog Title" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/template</id><content type="html" xml:base="http://localhost:4000/template/">&lt;h2 id=&quot;markdown-content&quot;&gt;Markdown Content&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-23T11:27:41+05:30</updated><id>http://localhost:4000/</id><title type="html">Vishal Gupta</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Blog Title</title><link href="http://localhost:4000/template/" rel="alternate" type="text/html" title="Blog Title" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/template</id><content type="html" xml:base="http://localhost:4000/template/">&lt;h2 id=&quot;markdown-content&quot;&gt;Markdown Content&lt;/h2&gt;
 
 &lt;p&gt;More &lt;strong&gt;markdown&lt;/strong&gt; content&lt;/p&gt;
 
@@ -13,7 +13,7 @@
 It lets you “transform your plain text into static websites and blogs”.&lt;/p&gt;
 
 &lt;h1 id=&quot;how-to-create-your-own-version-of-this-site&quot;&gt;How to create your own (version of this) site&lt;/h1&gt;
-&lt;h3 id=&quot;setting-up-github-pages&quot;&gt;Setting up Github Pages&lt;/h3&gt;
+&lt;h2 id=&quot;setting-up-github-pages&quot;&gt;Setting up Github Pages&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Create a &lt;a href=&quot;www.github.com&quot;&gt;Github&lt;/a&gt; account if you don’t have one.&lt;/li&gt;
   &lt;li&gt;Create a repository called &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt;.&lt;br /&gt;Note : By default, the contents of the github page for your repository will be sourced from its README.&lt;/li&gt;
@@ -25,7 +25,7 @@ It lets you “transform your plain text into static websites and blogs”.&lt;/
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;getting-this-theme&quot;&gt;Getting this theme&lt;/h3&gt;
+&lt;h2 id=&quot;getting-this-theme&quot;&gt;Getting this theme&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Find a &lt;a href=&quot;http://drjekyllthemes.github.io/&quot;&gt;Jekyll theme&lt;/a&gt; that works for you. Each theme has a link to its source code and emo below it.&lt;/li&gt;
   &lt;li&gt;If you’d like to use the theme I’m using, check out the demo &lt;a href=&quot;http://koppl.in/indigo/&quot;&gt;her&lt;/a&gt;. Though isn’t my site one :laughing: ?&lt;/li&gt;
@@ -38,7 +38,7 @@ It lets you “transform your plain text into static websites and blogs”.&lt;/
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;hosting-your-jekyll-site&quot;&gt;Hosting your Jekyll site&lt;/h3&gt;
+&lt;h2 id=&quot;hosting-your-jekyll-site&quot;&gt;Hosting your Jekyll site&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Optional : If you’d like to experiment with your site before you push it, make a branch with &lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout -b beta&lt;/code&gt;. However you can only host your github page from the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch so all your changes from &lt;code class=&quot;highlighter-rouge&quot;&gt;beta&lt;/code&gt; will have to be merged into &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;
@@ -59,7 +59,7 @@ It lets you “transform your plain text into static websites and blogs”.&lt;/
   &lt;li&gt;Note : Github Pages take some time to render so don’t expect your pushed changes to reflect immediately on your site. 😛&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;running-the-site-on-your-local-machine&quot;&gt;Running the site on your local machine&lt;/h3&gt;
+&lt;h2 id=&quot;running-the-site-on-your-local-machine&quot;&gt;Running the site on your local machine&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Install &lt;a href=&quot;https://www.ruby-lang.org/en/documentation/installation/&quot;&gt;Ruby&lt;/a&gt;, &lt;a href=&quot;https://bundler.io/&quot;&gt;Bundler&lt;/a&gt;, &lt;a href=&quot;https://jekyllrb.com/docs/&quot;&gt;Jekyll&lt;/a&gt; and other dependencies.&lt;/li&gt;
   &lt;li&gt;Serve site with jekyll&lt;/li&gt;
@@ -77,10 +77,11 @@ bundle exec jekyll serve --config _config.yml,_config-dev.yml
   &lt;li&gt;If it all works fine 👌 , your site should now be running on port &lt;a href=&quot;http://localhost:4000/&quot;&gt;4000&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;tweaking-your-site&quot;&gt;Tweaking your site&lt;/h3&gt;
+&lt;h2 id=&quot;tweaking-your-site&quot;&gt;Tweaking your site&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Most of the elements on your homepage can be edited with &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;. Comments in the file should guide you through the rest of the process.&lt;/li&gt;
   &lt;li&gt;However, changes made to &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; are not updated dynamically and the the server should be restarted.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;About&lt;/strong&gt; section can be edited at &lt;code class=&quot;highlighter-rouge&quot;&gt;/about.md&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;On the other hand, modifying other files and assets, dynamiccally updates your site. For example, this blog gets rendered on my local site as I write it&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -92,7 +93,7 @@ bundle exec jekyll serve --config _config.yml,_config-dev.yml
   &lt;li&gt;Again, once you’re done making changes, make sure you add, commit and push your changes to GitHub.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;creating-a-blog&quot;&gt;Creating a blog&lt;/h3&gt;
+&lt;h2 id=&quot;creating-a-blog&quot;&gt;Creating a blog&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Blogs are automatically generated from markdown files in &lt;code class=&quot;highlighter-rouge&quot;&gt;/_posts&lt;/code&gt;, which contains all blog posts.&lt;/li&gt;
   &lt;li&gt;Blog filename format : &lt;code class=&quot;highlighter-rouge&quot;&gt;yyyy-mm-dd-title.markdown&lt;/code&gt;
@@ -137,11 +138,14 @@ bundle exec jekyll serve --config _config.yml,_config-dev.yml
           &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hidden&lt;/code&gt; : If &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;, post won’t get indexed under at &lt;code class=&quot;highlighter-rouge&quot;&gt;/blog&lt;/code&gt;&lt;/li&gt;
           &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tags&lt;/code&gt; : List of tags for your blog. You can search for other blogs with the tag at &lt;code class=&quot;highlighter-rouge&quot;&gt;/tags/#tagname&lt;/code&gt;&lt;/li&gt;
           &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;category&lt;/code&gt; : used to suggest other blogs (in &lt;code class=&quot;highlighter-rouge&quot;&gt;/posts&lt;/code&gt;) with the same category&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;projects&lt;/code&gt; : If &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;, post will get indexed under at &lt;code class=&quot;highlighter-rouge&quot;&gt;/projects&lt;/code&gt;&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;Credits : 
 Icon made by &lt;a href=&quot;https://www.flaticon.com/authors/freepik&quot;&gt;Freepik&lt;/a&gt; from www.flaticon.com&lt;/p&gt;

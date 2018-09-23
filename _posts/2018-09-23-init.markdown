@@ -8,7 +8,7 @@ tag:
 - intro
 image: ../assets/images/init.png
 headerImage: true
-projects: true
+projects: false
 hidden: False
 description: "If you can't make it, fork it."
 category: blog
@@ -22,11 +22,12 @@ Do you
 - need your own site with a blog ? 
 - need your own site with a blog but can't code front-end ?
 
+
 Welcome to [Jekyll](https://jekyllrb.com/). 
 It lets you "transform your plain text into static websites and blogs".
 
 # How to create your own (version of this) site
-### Setting up Github Pages
+## Setting up Github Pages
 - Create a [Github](www.github.com) account if you don't have one.
 - Create a repository called `<username>.github.io`.<br>Note : By default, the contents of the github page for your repository will be sourced from its README. 
 - This lets you use Github Pages to host static webpages (fixed content)
@@ -34,7 +35,7 @@ It lets you "transform your plain text into static websites and blogs".
     
     ```git clone https://github.com/username/username.github.io.git```
 
-### Getting this theme
+## Getting this theme
 - Find a [Jekyll theme](http://drjekyllthemes.github.io/) that works for you. Each theme has a link to its source code and emo below it.
 - If you'd like to use the theme I'm using, check out the demo [her](http://koppl.in/indigo/). Though isn't my site one :laughing: ?
 - Show sergiokopplin some ❤️ by adding a ⭐️ to his [repository](https://github.com/sergiokopplin/indigo)
@@ -43,7 +44,7 @@ It lets you "transform your plain text into static websites and blogs".
     ```
     git clone https://github.com/sergiokopplin/indigo.git```
 
-### Hosting your Jekyll site
+## Hosting your Jekyll site
 - Optional : If you'd like to experiment with your site before you push it, make a branch with `git checkout -b beta`. However you can only host your github page from the `master` branch so all your changes from `beta` will have to be merged into `master`. 
 - Copy the theme files to your GH pages folder (after cloning)
 
@@ -60,7 +61,7 @@ It lets you "transform your plain text into static websites and blogs".
     ```
 - Note : Github Pages take some time to render so don't expect your pushed changes to reflect immediately on your site. 😛
 
-### Running the site on your local machine
+## Running the site on your local machine
 - Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/), [Bundler](https://bundler.io/), [Jekyll](https://jekyllrb.com/docs/) and other dependencies. 
 - Serve site with jekyll
   
@@ -76,9 +77,10 @@ bundle exec jekyll serve --config _config.yml,_config-dev.yml
 ```
 - If it all works fine 👌 , your site should now be running on port [4000](http://localhost:4000/).
 
-### Tweaking your site
+## Tweaking your site
 - Most of the elements on your homepage can be edited with `_config.yml`. Comments in the file should guide you through the rest of the process. 
 - However, changes made to `_config.yml` are not updated dynamically and the the server should be restarted.
+- The **About** section can be edited at `/about.md`
 - On the other hand, modifying other files and assets, dynamiccally updates your site. For example, this blog gets rendered on my local site as I write it 
 
 ```    
@@ -88,7 +90,7 @@ bundle exec jekyll serve --config _config.yml,_config-dev.yml
 ```
 - Again, once you're done making changes, make sure you add, commit and push your changes to GitHub.
 
-### Creating a blog
+## Creating a blog
 - Blogs are automatically generated from markdown files in `/_posts`, which contains all blog posts. 
 - Blog filename format : `yyyy-mm-dd-title.markdown`
     - `yyyy-mm-dd` : Date of the blog
@@ -128,9 +130,10 @@ bundle exec jekyll serve --config _config.yml,_config-dev.yml
         - `hidden` : If `true`, post won't get indexed under at `/blog`
         - `tags` : List of tags for your blog. You can search for other blogs with the tag at `/tags/#tagname`
         - `category` : used to suggest other blogs (in `/posts`) with the same category
+        - `projects` : If `true`, post will get indexed under at `/projects`
 
 
-
+---
 
 Credits : 
 Icon made by [Freepik](https://www.flaticon.com/authors/freepik) from www.flaticon.com 
