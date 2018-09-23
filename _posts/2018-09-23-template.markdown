@@ -1,18 +1,20 @@
 ---
-title: "Title"
+title: "Blog Title"
 layout: post
 date: 2018-09-23 08:36
-tag: jekyll
+tag: 
+- jekyll
+- template
 image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: true
 projects: true
-hidden: true # don't count this post in blog pagination
-description: "Description"
-category: project
+hidden: true 
+description: "Blog description"
+category: template
 author: johndoe
 externalLink: false
 ---
-Le content
+Markdown Content
 ---
 
 More **markdown** content

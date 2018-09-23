@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-23T09:33:20+05:30</updated><id>http://localhost:4000/</id><title type="html">Vishal Gupta</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Title</title><link href="http://localhost:4000/template/" rel="alternate" type="text/html" title="Title" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/template</id><content type="html" xml:base="http://localhost:4000/template/">&lt;h2 id=&quot;le-content&quot;&gt;Le content&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-23T10:48:15+05:30</updated><id>http://localhost:4000/</id><title type="html">Vishal Gupta</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Blog Title</title><link href="http://localhost:4000/template/" rel="alternate" type="text/html" title="Blog Title" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/template</id><content type="html" xml:base="http://localhost:4000/template/">&lt;h2 id=&quot;markdown-content&quot;&gt;Markdown Content&lt;/h2&gt;
 
 &lt;p&gt;More &lt;strong&gt;markdown&lt;/strong&gt; content&lt;/p&gt;
 
-&lt;hr /&gt;</content><author><name>johndoe</name></author><category term="project" /><category term="jekyll" /><summary type="html">Le content</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png" /></entry><entry><title type="html">Init : If you can’t make it, fork it.</title><link href="http://localhost:4000/init/" rel="alternate" type="text/html" title="Init : If you can't make it, fork it." /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/init</id><content type="html" xml:base="http://localhost:4000/init/">&lt;p&gt;Do you&lt;/p&gt;
+&lt;hr /&gt;</content><author><name>johndoe</name></author><category term="template" /><category term="jekyll" /><category term="template" /><summary type="html">Markdown Content</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png" /></entry><entry><title type="html">Creating your own site and blog with Jekyll and Markdown</title><link href="http://localhost:4000/init/" rel="alternate" type="text/html" title="Creating your own site and blog with Jekyll and Markdown" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/init</id><content type="html" xml:base="http://localhost:4000/init/">&lt;p&gt;Do you&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;need your own site ?&lt;/li&gt;
   &lt;li&gt;need your own site with a blog ?&lt;/li&gt;
@@ -12,44 +12,141 @@
 &lt;p&gt;Welcome to &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. 
 It lets you “transform your plain text into static websites and blogs”.&lt;/p&gt;
 
-&lt;h2 id=&quot;how-to-create-your-own-version-of-this-site&quot;&gt;How to create your own (version of this) site&lt;/h2&gt;
-&lt;h3 id=&quot;step-1--setting-up-github-pages&quot;&gt;Step 1 : Setting up Github Pages&lt;/h3&gt;
+&lt;h1 id=&quot;how-to-create-your-own-version-of-this-site&quot;&gt;How to create your own (version of this) site&lt;/h1&gt;
+&lt;h3 id=&quot;setting-up-github-pages&quot;&gt;Setting up Github Pages&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;Create a &lt;a href=&quot;www.github.com&quot;&gt;Github&lt;/a&gt; account if you don’t have one.&lt;/li&gt;
-  &lt;li&gt;Create a repository called &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Create a repository called &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt;.&lt;br /&gt;Note : By default, the contents of the github page for your repository will be sourced from its README.&lt;/li&gt;
   &lt;li&gt;This lets you use Github Pages to host static webpages (fixed content)&lt;/li&gt;
-  &lt;li&gt;Clone the repository on your local machine with
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git clone https://github.com/username/username.github.io.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;li&gt;
+    &lt;p&gt;Clone the repository on your local machine with&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone https://github.com/username/username.github.io.git&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;step---2--getting-athis-theme&quot;&gt;Step - 2 : Getting a/this theme&lt;/h3&gt;
+&lt;h3 id=&quot;getting-this-theme&quot;&gt;Getting this theme&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;Find a &lt;a href=&quot;http://drjekyllthemes.github.io/&quot;&gt;Jekyll theme&lt;/a&gt; that works for you. Each theme has a link to its source code and emo below it.&lt;/li&gt;
-  &lt;li&gt;If you’d like to use the theme I’m using, check out the &lt;a href=&quot;http://koppl.in/indigo/&quot;&gt;demo&lt;/a&gt; though isn’t my site one :laughing: ?&lt;/li&gt;
-  &lt;li&gt;Show sergiokopplin some ❤️ by adding a ⭐️ to the &lt;a href=&quot;https://github.com/sergiokopplin/indigo&quot;&gt;repository&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Clone the repository on your local machine with
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://github.com/sergiokopplin/indigo.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;h3 id=&quot;step---3--hosting-your-jekyll-site&quot;&gt;Step - 3 : Hosting your Jekyll site&lt;/h3&gt;
+  &lt;li&gt;If you’d like to use the theme I’m using, check out the demo &lt;a href=&quot;http://koppl.in/indigo/&quot;&gt;her&lt;/a&gt;. Though isn’t my site one :laughing: ?&lt;/li&gt;
+  &lt;li&gt;Show sergiokopplin some ❤️ by adding a ⭐️ to his &lt;a href=&quot;https://github.com/sergiokopplin/indigo&quot;&gt;repository&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Clone the repository on your local machine with&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+  git clone https://github.com/sergiokopplin/indigo.git&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;hosting-your-jekyll-site&quot;&gt;Hosting your Jekyll site&lt;/h3&gt;
+&lt;ul&gt;
   &lt;li&gt;Optional : If you’d like to experiment with your site before you push it, make a branch with &lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout -b beta&lt;/code&gt;. However you can only host your github page from the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch so all your changes from &lt;code class=&quot;highlighter-rouge&quot;&gt;beta&lt;/code&gt; will have to be merged into &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Copy the theme files to your GH pages folder (after cloning)
+  &lt;li&gt;
+    &lt;p&gt;Copy the theme files to your GH pages folder (after cloning)&lt;/p&gt;
+
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  cd username.github.io
   cp ../indigo/* -r .
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;Add, commit and push your changes to github.
+  &lt;li&gt;
+    &lt;p&gt;Add, commit and push your changes to github.&lt;/p&gt;
+
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git add .
   git commit -m &quot;Added theme files&quot;
   git push origin master  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;More &lt;strong&gt;markdown&lt;/strong&gt; content&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Note : Github Pages take some time to render so don’t expect your pushed changes to reflect immediately on your site. 😛&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;running-the-site-on-your-local-machine&quot;&gt;Running the site on your local machine&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Install &lt;a href=&quot;https://www.ruby-lang.org/en/documentation/installation/&quot;&gt;Ruby&lt;/a&gt;, &lt;a href=&quot;https://bundler.io/&quot;&gt;Bundler&lt;/a&gt;, &lt;a href=&quot;https://jekyllrb.com/docs/&quot;&gt;Jekyll&lt;/a&gt; and other dependencies.&lt;/li&gt;
+  &lt;li&gt;Serve site with jekyll&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install ruby ruby-dev build-essential
+# sudo apt-get install ruby`ruby -e 'puts RUBY_VERSION[/\d+\.\d+/]'`-dev\n
+# Run ⬆️ if you ⬇️ doesn't word
+sudo gem install eventmachine -v '1.2.7'
+gem install jekyll bundler
+bundle install
+bundle exec jekyll serve --config _config.yml,_config-dev.yml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;If it all works fine 👌 , your site should now be running on port &lt;a href=&quot;http://localhost:4000/&quot;&gt;4000&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tweaking-your-site&quot;&gt;Tweaking your site&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Most of the elements on your homepage can be edited with &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;. Comments in the file should guide you through the rest of the process.&lt;/li&gt;
+  &lt;li&gt;However, changes made to &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; are not updated dynamically and the the server should be restarted.&lt;/li&gt;
+  &lt;li&gt;On the other hand, modifying other files and assets, dynamiccally updates your site. For example, this blog gets rendered on my local site as I write it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Regenerating: 1 file(s) changed at 2018-09-23 10:08:23
+                    _posts/2018-09-23-init.markdown
+                    ...done in 1.246159402 seconds.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Again, once you’re done making changes, make sure you add, commit and push your changes to GitHub.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;creating-a-blog&quot;&gt;Creating a blog&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Blogs are automatically generated from markdown files in &lt;code class=&quot;highlighter-rouge&quot;&gt;/_posts&lt;/code&gt;, which contains all blog posts.&lt;/li&gt;
+  &lt;li&gt;Blog filename format : &lt;code class=&quot;highlighter-rouge&quot;&gt;yyyy-mm-dd-title.markdown&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;yyyy-mm-dd&lt;/code&gt; : Date of the blog&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; : Title of the blog with no space. Can have multiple hyphens instead. For example : &lt;code class=&quot;highlighter-rouge&quot;&gt;yyyy-mm-dd-new-blog.markdown&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Note : The title also becomes the URL of the blog. So link the above file would be &lt;code class=&quot;highlighter-rouge&quot;&gt;/new-blog&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Blog content format : &lt;code class=&quot;highlighter-rouge&quot;&gt;yyyy-mm-dd-title.markdown&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Every blog has a header (which is more a config) and content of your blog.&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;For example &lt;code class=&quot;highlighter-rouge&quot;&gt;2018-09-23-template.markdown&lt;/code&gt; is the  source for &lt;a href=&quot;http://vishalgupta.me/template/&quot;&gt;this blog&lt;/a&gt; and contains :&lt;/p&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  ---
+  title: &quot;Blog Title&quot;
+  layout: post
+  date: 2018-09-23 08:36
+  tag: 
+  - jekyll
+  - template
+  image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
+  headerImage: true
+  projects: true
+  hidden: true 
+  description: &quot;Blog description&quot;
+  category: template
+  author: johndoe
+  externalLink: false
+  ---
+  Markdown Content
+  ---
+
+  More **markdown** content
+
+  ---
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hidden&lt;/code&gt; : If &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;, post won’t get indexed under at &lt;code class=&quot;highlighter-rouge&quot;&gt;/blog&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tags&lt;/code&gt; : List of tags for your blog. You can search for other blogs with the tag at &lt;code class=&quot;highlighter-rouge&quot;&gt;/tags/#tagname&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;category&lt;/code&gt; : used to suggest other blogs (in &lt;code class=&quot;highlighter-rouge&quot;&gt;/posts&lt;/code&gt;) with the same category&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;icon-made-by-freepik-from-wwwflaticoncom&quot;&gt;Icon made by &lt;a href=&quot;https://www.flaticon.com/authors/freepik&quot;&gt;Freepik&lt;/a&gt; from www.flaticon.com&lt;/h2&gt;</content><author><name>johndoe</name></author><category term="project" /><category term="jekyll" /><summary type="html">Do you need your own site ? need your own site with a blog ? need your own site with a blog but can’t code front-end ?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/init.png" /></entry><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2016-02-24T22:48:00+05:30</published><updated>2016-02-24T22:48:00+05:30</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+&lt;p&gt;Credits : 
+Icon made by &lt;a href=&quot;https://www.flaticon.com/authors/freepik&quot;&gt;Freepik&lt;/a&gt; from www.flaticon.com&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name>johndoe</name></author><category term="blog" /><category term="howto" /><category term="tutorial" /><category term="intro" /><summary type="html">Do you need your own site ? need your own site with a blog ? need your own site with a blog but can’t code front-end ?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/init.png" /></entry><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2016-02-24T22:48:00+05:30</published><updated>2016-02-24T22:48:00+05:30</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
 
 &lt;p&gt;You can pick as item to see how to apply in markdown.&lt;/p&gt;
 

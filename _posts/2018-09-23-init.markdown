@@ -1,14 +1,17 @@
 ---
-title: "Init : If you can't make it, fork it."
+title: "Creating your own site and blog with Jekyll and Markdown"
 layout: post
 date: 2018-09-23 08:36
-tag: jekyll
+tag: 
+- howto
+- tutorial
+- intro
 image: ../assets/images/init.png
 headerImage: true
 projects: true
 hidden: False
-description: "How to create your own site"
-category: project
+description: "If you can't make it, fork it."
+category: blog
 author: johndoe
 externalLink: false
 
@@ -22,40 +25,114 @@ Do you
 Welcome to [Jekyll](https://jekyllrb.com/). 
 It lets you "transform your plain text into static websites and blogs".
 
-## How to create your own (version of this) site
-### Step 1 : Setting up Github Pages
+# How to create your own (version of this) site
+### Setting up Github Pages
 - Create a [Github](www.github.com) account if you don't have one.
-- Create a repository called `<username>.github.io`.
+- Create a repository called `<username>.github.io`.<br>Note : By default, the contents of the github page for your repository will be sourced from its README. 
 - This lets you use Github Pages to host static webpages (fixed content)
 - Clone the repository on your local machine with 
-    ```
-    git clone https://github.com/username/username.github.io.git
-    ```
+    
+    ```git clone https://github.com/username/username.github.io.git```
 
-### Step - 2 : Getting a/this theme
+### Getting this theme
 - Find a [Jekyll theme](http://drjekyllthemes.github.io/) that works for you. Each theme has a link to its source code and emo below it.
-- If you'd like to use the theme I'm using, check out the [demo](http://koppl.in/indigo/) though isn't my site one :laughing: ?
-- Show sergiokopplin some ❤️ by adding a ⭐️ to the [repository](https://github.com/sergiokopplin/indigo)
+- If you'd like to use the theme I'm using, check out the demo [her](http://koppl.in/indigo/). Though isn't my site one :laughing: ?
+- Show sergiokopplin some ❤️ by adding a ⭐️ to his [repository](https://github.com/sergiokopplin/indigo)
 - Clone the repository on your local machine with 
-  ```
-  https://github.com/sergiokopplin/indigo.git
-  ```
-### Step - 3 : Hosting your Jekyll site
+
+    ```
+    git clone https://github.com/sergiokopplin/indigo.git```
+
+### Hosting your Jekyll site
 - Optional : If you'd like to experiment with your site before you push it, make a branch with `git checkout -b beta`. However you can only host your github page from the `master` branch so all your changes from `beta` will have to be merged into `master`. 
 - Copy the theme files to your GH pages folder (after cloning)
+
     ```
     cd username.github.io
     cp ../indigo/* -r .
     ```
 - Add, commit and push your changes to github.
+
     ```
     git add .
     git commit -m "Added theme files"
     git push origin master  
     ```
-More **markdown** content
+- Note : Github Pages take some time to render so don't expect your pushed changes to reflect immediately on your site. 😛
+
+### Running the site on your local machine
+- Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/), [Bundler](https://bundler.io/), [Jekyll](https://jekyllrb.com/docs/) and other dependencies. 
+- Serve site with jekyll
+  
+
+```
+sudo apt-get install ruby ruby-dev build-essential
+# sudo apt-get install ruby`ruby -e 'puts RUBY_VERSION[/\d+\.\d+/]'`-dev\n
+# Run ⬆️ if you ⬇️ doesn't word
+sudo gem install eventmachine -v '1.2.7'
+gem install jekyll bundler
+bundle install
+bundle exec jekyll serve --config _config.yml,_config-dev.yml
+```
+- If it all works fine 👌 , your site should now be running on port [4000](http://localhost:4000/).
+
+### Tweaking your site
+- Most of the elements on your homepage can be edited with `_config.yml`. Comments in the file should guide you through the rest of the process. 
+- However, changes made to `_config.yml` are not updated dynamically and the the server should be restarted.
+- On the other hand, modifying other files and assets, dynamiccally updates your site. For example, this blog gets rendered on my local site as I write it 
+
+```    
+    Regenerating: 1 file(s) changed at 2018-09-23 10:08:23
+                    _posts/2018-09-23-init.markdown
+                    ...done in 1.246159402 seconds.
+```
+- Again, once you're done making changes, make sure you add, commit and push your changes to GitHub.
+
+### Creating a blog
+- Blogs are automatically generated from markdown files in `/_posts`, which contains all blog posts. 
+- Blog filename format : `yyyy-mm-dd-title.markdown`
+    - `yyyy-mm-dd` : Date of the blog
+    - `title` : Title of the blog with no space. Can have multiple hyphens instead. For example : `yyyy-mm-dd-new-blog.markdown`
+    - Note : The title also becomes the URL of the blog. So link the above file would be `/new-blog`
+- Blog content format : `yyyy-mm-dd-title.markdown`
+    - Every blog has a header (which is more a config) and content of your blog.
+    - For example `2018-09-23-template.markdown` is the  source for [this blog](http://vishalgupta.me/template/) and contains : 
+
+        ```
+        ---
+        title: "Blog Title"
+        layout: post
+        date: 2018-09-23 08:36
+        tag: 
+        - jekyll
+        - template
+        image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
+        headerImage: true
+        projects: true
+        hidden: true 
+        description: "Blog description"
+        category: template
+        author: johndoe
+        externalLink: false
+        ---
+        Markdown Content
+        ---
+
+        More **markdown** content
+
+        ---
+
+        ```
+        
+
+        - `hidden` : If `true`, post won't get indexed under at `/blog`
+        - `tags` : List of tags for your blog. You can search for other blogs with the tag at `/tags/#tagname`
+        - `category` : used to suggest other blogs (in `/posts`) with the same category
 
 
 
+
+Credits : 
 Icon made by [Freepik](https://www.flaticon.com/authors/freepik) from www.flaticon.com 
+
 ---
