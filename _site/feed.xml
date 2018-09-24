@@ -1,4 +1,135 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-23T11:42:00+05:30</updated><id>http://localhost:4000/</id><title type="html">Vishal Gupta</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Blog Title</title><link href="http://localhost:4000/template/" rel="alternate" type="text/html" title="Blog Title" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/template</id><content type="html" xml:base="http://localhost:4000/template/">&lt;h2 id=&quot;markdown-content&quot;&gt;Markdown Content&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-24T12:59:19+05:30</updated><id>http://localhost:4000/</id><title type="html">Vishal Gupta</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Slideshows with Markdown!</title><link href="http://localhost:4000/md-slides/" rel="alternate" type="text/html" title="Slideshows with Markdown!" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/md-slides</id><content type="html" xml:base="http://localhost:4000/md-slides/">&lt;p&gt;&lt;a href=&quot;https://revealjs.com/&quot;&gt;reveal.js&lt;/a&gt; (&lt;a href=&quot;https://github.com/hakimel/reveal.js&quot;&gt;Github repo&lt;/a&gt;) is an open-source project that lets you generate beautiful slideshows with HTML, CSS and Javascript. Slide content is written inside &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;section&amp;gt;&amp;lt;/section&amp;gt;&lt;/code&gt; blocks. Sections with the attribute &lt;code class=&quot;highlighter-rouge&quot;&gt;data-markdown&lt;/code&gt; to load markdown content. There are two ways to go about this&lt;/p&gt;
+
+&lt;h3 id=&quot;tldr&quot;&gt;tl;dr&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fork &lt;code class=&quot;highlighter-rouge&quot;&gt;https://github.com/py-ranoid/reveal.js&lt;/code&gt; with
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git clone git@github.com:py-ranoid/reveal.js.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Create a copy of &lt;code class=&quot;highlighter-rouge&quot;&gt;/md_example&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;/myslides&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Comment or delete lines 24 to 53 in &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Edit markdown content in &lt;code class=&quot;highlighter-rouge&quot;&gt;example.md&lt;/code&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;2 lines : Vertical slide seperation&lt;/li&gt;
+      &lt;li&gt;3 lines : Horizontal slide seperation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Edit slide themes by changing the name of the CSS file on &lt;a href=&quot;https://github.com/py-ranoid/reveal.js/blob/master/md_example/index.html#L10&quot;&gt;Line 10&lt;/a&gt;. You can try &lt;a href=&quot;https://revealjs.com/#/themes&quot;&gt;them here&lt;/a&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;Options are
+        &lt;ul&gt;
+          &lt;li&gt;Light Themes : &lt;code class=&quot;highlighter-rouge&quot;&gt;sky.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;beige.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;white.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;simple.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;solarized.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;serif.css&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;Dark Themes : &lt;code class=&quot;highlighter-rouge&quot;&gt;blood.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;league.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;black.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;moon.css&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;night.css&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add, Commit and Push your changes to Github&lt;/li&gt;
+  &lt;li&gt;Enable Github Pages for your reveal.js fork with &lt;strong&gt;Settings &amp;gt;  Github Pages&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Your slides should be hosted at &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io/reveal.js/myslides&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;seperating-content-into-slides&quot;&gt;Seperating content into slides&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;reveal.js offers vertical (⬆️ and ⬇️) and horizontal (⬅️ and ➡️) slide propogation&lt;/li&gt;
+  &lt;li&gt;Hence content can have vertical seperators and horizontal seperators&lt;/li&gt;
+  &lt;li&gt;Vertical slides can be used to display optional/additional content about a slide&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Set by the attributes : &lt;code class=&quot;highlighter-rouge&quot;&gt;data-separator&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;data-separator-vertical&lt;/code&gt; respectively. For example :&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;data-separator=&quot;^\n\n\n&quot; data-separator-vertical=&quot;^\n\n&quot;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Hence markdown content seperated by 2 blank lines would be in different vertical slides and markdown content seperated by 3 blank lines would be in different horizontal slides.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;writing-slide-content&quot;&gt;Writing slide content&lt;/h2&gt;
+&lt;p&gt;There are two ways to add slide content with markdown&lt;/p&gt;
+&lt;h3 id=&quot;in-a-seperate-markdown-file&quot;&gt;In a seperate markdown file&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Isolates content from styling&lt;/li&gt;
+  &lt;li&gt;Requires a &lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt; file and a &lt;code class=&quot;highlighter-rouge&quot;&gt;.html&lt;/code&gt; file&lt;/li&gt;
+  &lt;li&gt;Inside &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div class=&quot;slides&quot;&amp;gt;...&amp;lt;/div&amp;gt;&lt;/code&gt;, add this section :
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;lt;section data-markdown=&quot;example.md&quot; data-separator=&quot;^\n\n\n&quot; data-separator-vertical=&quot;^\n\n&quot;&amp;gt;&amp;lt;/section&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;within-indexhtml&quot;&gt;Within &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Markdown content embedded within html tags&lt;/li&gt;
+  &lt;li&gt;Requires a single &lt;code class=&quot;highlighter-rouge&quot;&gt;.html&lt;/code&gt; file&lt;/li&gt;
+  &lt;li&gt;Inside &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div class=&quot;slides&quot;&amp;gt;...&amp;lt;/div&amp;gt;&lt;/code&gt;, add this section :
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      &amp;lt;section data-separator=&quot;^\n\n\n&quot; data-separator-vertical=&quot;^\n\n&quot;&amp;gt;
+      &amp;lt;script type=&quot;text/template&quot;&amp;gt;
+          # Markdown content
+            
+
+
+          # Slide 2
+
+
+          ## Slide 2.2
+      &amp;lt;/script&amp;gt;
+  &amp;lt;/section&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add Slide content within the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt; tag.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;slide-themes&quot;&gt;Slide themes&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Edit slide themes by changing the name of the CSS file on &lt;a href=&quot;https://github.com/py-ranoid/reveal.js/blob/master/md_example/index.html#L10&quot;&gt;Line 10&lt;/a&gt;. You can try &lt;a href=&quot;https://revealjs.com/#/themes&quot;&gt;them here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Options are
+    &lt;ul&gt;
+      &lt;li&gt;Light Themes : &lt;code class=&quot;highlighter-rouge&quot;&gt;sky.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;beige.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;white.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;simple.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;solarized.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;serif.css&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Dark Themes : &lt;code class=&quot;highlighter-rouge&quot;&gt;blood.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;league.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;black.css&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;moon.css&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;night.css&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;slide-transitions&quot;&gt;Slide transitions&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Default transition is &lt;strong&gt;slide&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;You can choose from &lt;strong&gt;none&lt;/strong&gt;, &lt;strong&gt;fade&lt;/strong&gt;, &lt;strong&gt;slide&lt;/strong&gt;, &lt;strong&gt;convex&lt;/strong&gt;, &lt;strong&gt;concave&lt;/strong&gt; and &lt;strong&gt;zoom&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;To apply transitions to sections, use the &lt;code class=&quot;highlighter-rouge&quot;&gt;data-transition&lt;/code&gt; attribute&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;section data-transition=&quot;slide&quot;&amp;gt;
+    The train goes on …                 &amp;lt;/section&amp;gt;
+&amp;lt;section data-transition=&quot;slide&quot;&amp;gt;
+    and on …                            &amp;lt;/section&amp;gt;
+&amp;lt;section data-transition=&quot;slide-in fade-out&quot;&amp;gt;
+    and stops.                          &amp;lt;/section&amp;gt;
+&amp;lt;section data-transition=&quot;fade-in slide-out&quot;&amp;gt;
+    (Passengers entering and leaving)   &amp;lt;/section&amp;gt;
+&amp;lt;section data-transition=&quot;slide&quot;&amp;gt;
+    And it starts again                 &amp;lt;/section&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To apply transitions to slides, within markdown, use this&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!-- .slide: data-transition=&quot;slide&quot; --&amp;gt;
+## Slide attributes
+Slide content. 
+
+
+## Slide 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;fragments&quot;&gt;Fragments&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fragments can be use to &lt;a href=&quot;http://vishalgupta.me/reveal.js/md_example/#/6&quot;&gt;sequentially introduce&lt;/a&gt; mutiple elements in a slide sequentially&lt;/li&gt;
+  &lt;li&gt;Within markdown, this can be done with :&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## Element attributes
+- Item 1 &amp;lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;2&quot; --&amp;gt;
+- Item 2 &amp;lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;1&quot; --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>johndoe</name></author><category term="blog" /><category term="howto" /><category term="intro" /><summary type="html">reveal.js (Github repo) is an open-source project that lets you generate beautiful slideshows with HTML, CSS and Javascript. Slide content is written inside &amp;lt;section&amp;gt;&amp;lt;/section&amp;gt; blocks. Sections with the attribute data-markdown to load markdown content. There are two ways to go about this</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/reveal.png" /></entry><entry><title type="html">Blog Title</title><link href="http://localhost:4000/template/" rel="alternate" type="text/html" title="Blog Title" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/template</id><content type="html" xml:base="http://localhost:4000/template/">&lt;h2 id=&quot;markdown-content&quot;&gt;Markdown Content&lt;/h2&gt;
 
 &lt;p&gt;More &lt;strong&gt;markdown&lt;/strong&gt; content&lt;/p&gt;
 
@@ -271,17 +402,7 @@ Icon made by &lt;a href=&quot;https://www.flaticon.com/authors/freepik&quot;&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;{ % gist sergiokopplin/91ff4220480727b47224245ee2e9c291 % }&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;noscript&gt;&lt;pre&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-&amp;lt;head&amp;gt;
-    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
-    &amp;lt;title&amp;gt;Just a Test!&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-  &amp;lt;h1&amp;gt;Working!&amp;lt;/h1&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/sergiokopplin/91ff4220480727b47224245ee2e9c291.js&quot;&gt; &lt;/script&gt;
+&lt;p&gt;true&lt;script src=&quot;https://gist.github.com/sergiokopplin/91ff4220480727b47224245ee2e9c291.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 

@@ -1,0 +1,123 @@
+---
+title: "Slideshows with Markdown!"
+layout: post
+date: 2018-09-23 08:36
+tag: 
+- howto
+- intro
+image: ../assets/images/reveal.png
+headerImage: true
+projects: false
+hidden: false 
+description: "Using reveal.js to generate slideshows from markdown"
+category: blog
+author: johndoe
+externalLink: false
+---
+[reveal.js](https://revealjs.com/) ([Github repo](https://github.com/hakimel/reveal.js)) is an open-source project that lets you generate beautiful slideshows with HTML, CSS and Javascript. Slide content is written inside `<section></section>` blocks. Sections with the attribute `data-markdown` to load markdown content. There are two ways to go about this
+
+### tl;dr
+- Fork `https://github.com/py-ranoid/reveal.js` with
+    ```
+    git clone git@github.com:py-ranoid/reveal.js.git
+    ```
+- Create a copy of `/md_example` to `/myslides`
+- Comment or delete lines 24 to 53 in `index.html`
+- Edit markdown content in `example.md`. 
+    - 2 lines : Vertical slide seperation
+    - 3 lines : Horizontal slide seperation  
+- Edit slide themes by changing the name of the CSS file on [Line 10](https://github.com/py-ranoid/reveal.js/blob/master/md_example/index.html#L10). You can try [them here](https://revealjs.com/#/themes). 
+    - Options are 
+        - Light Themes : `sky.css`, `beige.css`, `white.css`, `simple.css`, `solarized.css`, `serif.css`
+        - Dark Themes : `blood.css`, `league.css`, `black.css`, `moon.css`,`night.css`
+- Add, Commit and Push your changes to Github
+- Enable Github Pages for your reveal.js fork with **Settings >  Github Pages**
+- Your slides should be hosted at `username.github.io/reveal.js/myslides`
+
+---
+
+## Seperating content into slides
+- reveal.js offers vertical (⬆️ and ⬇️) and horizontal (⬅️ and ➡️) slide propogation
+- Hence content can have vertical seperators and horizontal seperators
+- Vertical slides can be used to display optional/additional content about a slide
+- Set by the attributes : `data-separator` and `data-separator-vertical` respectively. For example : 
+
+    ```data-separator="^\n\n\n" data-separator-vertical="^\n\n"```
+- Hence markdown content seperated by 2 blank lines would be in different vertical slides and markdown content seperated by 3 blank lines would be in different horizontal slides.
+
+## Writing slide content
+There are two ways to add slide content with markdown
+### In a seperate markdown file 
+- Isolates content from styling
+- Requires a `.md` file and a `.html` file
+- Inside `<div class="slides">...</div>`, add this section : 
+    ```
+    <section data-markdown="example.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+    ```
+
+### Within `index.html`
+- Markdown content embedded within html tags 
+- Requires a single `.html` file
+- Inside `<div class="slides">...</div>`, add this section : 
+    ```
+        <section data-separator="^\n\n\n" data-separator-vertical="^\n\n">
+        <script type="text/template">
+            # Markdown content
+            
+
+
+            # Slide 2
+
+
+            ## Slide 2.2
+        </script>
+    </section>
+    ```
+- Add Slide content within the `<script></script>` tag.
+
+
+## Slide themes
+- Edit slide themes by changing the name of the CSS file on [Line 10](https://github.com/py-ranoid/reveal.js/blob/master/md_example/index.html#L10). You can try [them here](https://revealjs.com/#/themes). 
+- Options are 
+    - Light Themes : `sky.css`, `beige.css`, `white.css`, `simple.css`, `solarized.css`, `serif.css`
+    - Dark Themes : `blood.css`, `league.css`, `black.css`, `moon.css`,`night.css`
+
+
+## Slide transitions
+- Default transition is **slide**
+- You can choose from **none**, **fade**, **slide**, **convex**, **concave** and **zoom**
+- To apply transitions to sections, use the `data-transition` attribute
+
+```
+<section data-transition="slide">
+    The train goes on …                 </section>
+<section data-transition="slide">
+    and on …                            </section>
+<section data-transition="slide-in fade-out">
+    and stops.                          </section>
+<section data-transition="fade-in slide-out">
+    (Passengers entering and leaving)   </section>
+<section data-transition="slide">
+    And it starts again                 </section>
+```
+
+- To apply transitions to slides, within markdown, use this
+
+```
+<!-- .slide: data-transition="slide" -->
+## Slide attributes
+Slide content. 
+
+
+## Slide 2
+```
+
+## Fragments
+- Fragments can be use to [sequentially introduce](http://vishalgupta.me/reveal.js/md_example/#/6) mutiple elements in a slide sequentially
+- Within markdown, this can be done with :
+
+```
+## Element attributes
+- Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
+- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+```
