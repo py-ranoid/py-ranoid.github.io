@@ -12,7 +12,7 @@ projects: false
 hidden: False
 description: "If you can't make it, fork it."
 category: blog
-author: johndoe
+author: Vishal Gupta
 externalLink: false
 
 ---

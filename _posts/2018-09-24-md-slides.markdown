@@ -11,7 +11,7 @@ projects: false
 hidden: false 
 description: "Using reveal.js to generate slideshows from markdown"
 category: blog
-author: johndoe
+author: Vishal Gupta
 externalLink: false
 ---
 [reveal.js](https://revealjs.com/) ([Github repo](https://github.com/hakimel/reveal.js)) is an open-source project that lets you generate beautiful slideshows with HTML, CSS and Javascript. Slide content is written inside `<section></section>` blocks. Sections with the attribute `data-markdown` to load markdown content. There are two ways to go about this
