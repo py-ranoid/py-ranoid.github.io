@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-24T12:59:19+05:30</updated><id>http://localhost:4000/</id><title type="html">Vishal Gupta</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Slideshows with Markdown!</title><link href="http://localhost:4000/md-slides/" rel="alternate" type="text/html" title="Slideshows with Markdown!" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/md-slides</id><content type="html" xml:base="http://localhost:4000/md-slides/">&lt;p&gt;&lt;a href=&quot;https://revealjs.com/&quot;&gt;reveal.js&lt;/a&gt; (&lt;a href=&quot;https://github.com/hakimel/reveal.js&quot;&gt;Github repo&lt;/a&gt;) is an open-source project that lets you generate beautiful slideshows with HTML, CSS and Javascript. Slide content is written inside &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;section&amp;gt;&amp;lt;/section&amp;gt;&lt;/code&gt; blocks. Sections with the attribute &lt;code class=&quot;highlighter-rouge&quot;&gt;data-markdown&lt;/code&gt; to load markdown content. There are two ways to go about this&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-06T08:03:24+05:30</updated><id>http://localhost:4000/</id><title type="html">Vishal Gupta</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">DebDialer : Handling phone numbers on Linux Desktops | GSoC 2018</title><link href="http://localhost:4000/gsoc18-debdialer/" rel="alternate" type="text/html" title="DebDialer : Handling phone numbers on Linux Desktops | GSoC 2018" /><published>2018-10-06T07:34:00+05:30</published><updated>2018-10-06T07:34:00+05:30</updated><id>http://localhost:4000/gsoc18-debdialer</id><content type="html" xml:base="http://localhost:4000/gsoc18-debdialer/">&lt;p&gt;This summer I had the chance to contribute to Debian as a part of GSoC. I built a desktop application, debdialer for handling tel: URLs and (phone numbers in general) on the Linux Desktop. It is written in &lt;a href=&quot;https://www.python.org/downloads/release/python-352/&quot;&gt;Python 3.5.2&lt;/a&gt; and uses &lt;a href=&quot;http://pyqt.sourceforge.net/Docs/PyQt4/introduction.html#pyqt4-components&quot;&gt;PyQt4&lt;/a&gt; to display a popup window. Alternatively, there is also a &lt;code class=&quot;highlighter-rouge&quot;&gt;no-gui&lt;/code&gt; option that uses &lt;a href=&quot;https://wiki.archlinux.org/index.php/Dmenu&quot;&gt;dmenu&lt;/a&gt; for input and terminal for output. There is also a &lt;a href=&quot;tiny.cc/ddial-kdeconnect&quot;&gt;modified apk&lt;/a&gt; of &lt;a href=&quot;https://phabricator.kde.org/project/view/159/&quot;&gt;KDE-Connect&lt;/a&gt; to link debdialer with the user’s Android Phone. The pop-up window has numeric and delete buttons, so the user can either use the GUI or keyboard to modify numbers.&lt;/p&gt;
+
+&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;toleft&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://vishalgupta.me/debdialer/Images/PrimaryDesk.png&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;DebDialer&lt;/figcaption&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;toright&quot;&gt;
+        &lt;p&gt;&lt;h4&gt; Features&lt;/h4&gt;(&lt;a href=&quot;https://salsa.debian.org/comfortablydumb-guest/Hello-from-the-Debian-side#usage&quot;&gt;Screenshots and how-to&lt;/a&gt;)
+        &lt;ol&gt;
+            &lt;li&gt; Adds contact using .vcf file (&lt;i&gt;Add vcard to     Contacts&lt;/i&gt;)&lt;/li&gt;
+            &lt;li&gt; Adds number in dialer as contact (&lt;i&gt;Add to Contacts&lt;/i&gt;) &lt;/li&gt;
+            &lt;li&gt; Sending dialer number to Android phone (&lt;i&gt;DIAL ON ANDROID PHONE&lt;/i&gt;)&lt;/li&gt;
+            &lt;li&gt; Parsing numbers from file (&lt;i&gt;Open File&lt;/i&gt;) &lt;/li&gt;
+            &lt;li&gt; Automatic formatting of numbers and setting of details &lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Installing with &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt; installs the python package but does not set up the desktop file. Hence, the following script needs to be run.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Optional dependencies. Atleast one of them is required.
+sudo apt install dmenu
+sudo apt install python3-pyqt4
+
+curl -L https://salsa.debian.org/comfortablydumb-guest/Hello-from-the-Debian-side/raw/master/install.sh -s | bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;links-&quot;&gt;Links :&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;debdialer
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://salsa.debian.org/comfortablydumb-guest/Hello-from-the-Debian-side/tree/master&quot;&gt;Debian Salsa Repository &lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/py-ranoid/debdialer&quot;&gt;Github Mirror&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Email : &lt;a href=&quot;mailto:vishalg8897@gmail.com&quot;&gt;vishalg8897@gmail.com&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Vishal Gupta</name></author><category term="blog" /><category term="intro" /><category term="gsoc" /><category term="python" /><summary type="html">This summer I had the chance to contribute to Debian as a part of GSoC. I built a desktop application, debdialer for handling tel: URLs and (phone numbers in general) on the Linux Desktop. It is written in Python 3.5.2 and uses PyQt4 to display a popup window. Alternatively, there is also a no-gui option that uses dmenu for input and terminal for output. There is also a modified apk of KDE-Connect to link debdialer with the user’s Android Phone. The pop-up window has numeric and delete buttons, so the user can either use the GUI or keyboard to modify numbers.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/deb.png" /></entry><entry><title type="html">Slideshows with Markdown!</title><link href="http://localhost:4000/md-slides/" rel="alternate" type="text/html" title="Slideshows with Markdown!" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/md-slides</id><content type="html" xml:base="http://localhost:4000/md-slides/">&lt;p&gt;&lt;a href=&quot;https://revealjs.com/&quot;&gt;reveal.js&lt;/a&gt; (&lt;a href=&quot;https://github.com/hakimel/reveal.js&quot;&gt;Github repo&lt;/a&gt;) is an open-source project that lets you generate beautiful slideshows with HTML, CSS and Javascript. Slide content is written inside &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;section&amp;gt;&amp;lt;/section&amp;gt;&lt;/code&gt; blocks. Sections with the attribute &lt;code class=&quot;highlighter-rouge&quot;&gt;data-markdown&lt;/code&gt; to load markdown content. There are two ways to go about this&lt;/p&gt;
 
 &lt;h3 id=&quot;tldr&quot;&gt;tl;dr&lt;/h3&gt;
 &lt;ul&gt;
@@ -129,11 +167,7 @@ Slide content.
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## Element attributes
 - Item 1 &amp;lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;2&quot; --&amp;gt;
 - Item 2 &amp;lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;1&quot; --&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>johndoe</name></author><category term="blog" /><category term="howto" /><category term="intro" /><summary type="html">reveal.js (Github repo) is an open-source project that lets you generate beautiful slideshows with HTML, CSS and Javascript. Slide content is written inside &amp;lt;section&amp;gt;&amp;lt;/section&amp;gt; blocks. Sections with the attribute data-markdown to load markdown content. There are two ways to go about this</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/reveal.png" /></entry><entry><title type="html">Blog Title</title><link href="http://localhost:4000/template/" rel="alternate" type="text/html" title="Blog Title" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/template</id><content type="html" xml:base="http://localhost:4000/template/">&lt;h2 id=&quot;markdown-content&quot;&gt;Markdown Content&lt;/h2&gt;
-
-&lt;p&gt;More &lt;strong&gt;markdown&lt;/strong&gt; content&lt;/p&gt;
-
-&lt;hr /&gt;</content><author><name>johndoe</name></author><category term="template" /><category term="jekyll" /><category term="template" /><summary type="html">Markdown Content</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png" /></entry><entry><title type="html">Creating your own site and blog with Jekyll and Markdown</title><link href="http://localhost:4000/init/" rel="alternate" type="text/html" title="Creating your own site and blog with Jekyll and Markdown" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/init</id><content type="html" xml:base="http://localhost:4000/init/">&lt;p&gt;Do you&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Vishal Gupta</name></author><category term="blog" /><category term="howto" /><category term="intro" /><summary type="html">reveal.js (Github repo) is an open-source project that lets you generate beautiful slideshows with HTML, CSS and Javascript. Slide content is written inside &amp;lt;section&amp;gt;&amp;lt;/section&amp;gt; blocks. Sections with the attribute data-markdown to load markdown content. There are two ways to go about this</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/reveal.png" /></entry><entry><title type="html">Creating your own site and blog with Jekyll and Markdown</title><link href="http://localhost:4000/init/" rel="alternate" type="text/html" title="Creating your own site and blog with Jekyll and Markdown" /><published>2018-09-23T08:36:00+05:30</published><updated>2018-09-23T08:36:00+05:30</updated><id>http://localhost:4000/init</id><content type="html" xml:base="http://localhost:4000/init/">&lt;p&gt;Do you&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;need your own site ?&lt;/li&gt;
   &lt;li&gt;need your own site with a blog ?&lt;/li&gt;
@@ -281,7 +315,11 @@ bundle exec jekyll serve --config _config.yml,_config-dev.yml
 &lt;p&gt;Credits : 
 Icon made by &lt;a href=&quot;https://www.flaticon.com/authors/freepik&quot;&gt;Freepik&lt;/a&gt; from www.flaticon.com&lt;/p&gt;
 
-&lt;hr /&gt;</content><author><name>johndoe</name></author><category term="blog" /><category term="howto" /><category term="tutorial" /><category term="intro" /><summary type="html">Do you need your own site ? need your own site with a blog ? need your own site with a blog but can’t code front-end ?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/init.png" /></entry><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2016-02-24T22:48:00+05:30</published><updated>2016-02-24T22:48:00+05:30</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+&lt;hr /&gt;</content><author><name>Vishal Gupta</name></author><category term="blog" /><category term="howto" /><category term="tutorial" /><category term="intro" /><summary type="html">Do you need your own site ? need your own site with a blog ? need your own site with a blog but can’t code front-end ?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/init.png" /></entry><entry><title type="html">Blog Title</title><link href="http://localhost:4000/template/" rel="alternate" type="text/html" title="Blog Title" /><published>2008-09-23T08:36:00+05:30</published><updated>2008-09-23T08:36:00+05:30</updated><id>http://localhost:4000/template</id><content type="html" xml:base="http://localhost:4000/template/">&lt;h2 id=&quot;markdown-content&quot;&gt;Markdown Content&lt;/h2&gt;
+
+&lt;p&gt;More &lt;strong&gt;markdown&lt;/strong&gt; content&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name>johndoe</name></author><category term="template" /><category term="jekyll" /><category term="template" /><summary type="html">Markdown Content</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png" /></entry><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2008-02-24T22:48:00+05:30</published><updated>2008-02-24T22:48:00+05:30</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
 
 &lt;p&gt;You can pick as item to see how to apply in markdown.&lt;/p&gt;
 
@@ -402,7 +440,17 @@ Icon made by &lt;a href=&quot;https://www.flaticon.com/authors/freepik&quot;&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;{ % gist sergiokopplin/91ff4220480727b47224245ee2e9c291 % }&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;true&lt;script src=&quot;https://gist.github.com/sergiokopplin/91ff4220480727b47224245ee2e9c291.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;Just a Test!&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;h1&amp;gt;Working!&amp;lt;/h1&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/sergiokopplin/91ff4220480727b47224245ee2e9c291.js&quot;&gt; &lt;/script&gt;
 
 &lt;hr /&gt;
 
@@ -438,7 +486,7 @@ Icon made by &lt;a href=&quot;https://www.flaticon.com/authors/freepik&quot;&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;560&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;310&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.youtube.com/embed/r7XhWUDj-Ts&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;frameborder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;allowfullscreen&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;310&quot; src=&quot;https://www.youtube.com/embed/r7XhWUDj-Ts&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>jamesfoster</name></author><category term="blog" /><category term="markdown" /><category term="components" /><category term="extra" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Markdown Common Elements</title><link href="http://localhost:4000/markdown-common-elements/" rel="alternate" type="text/html" title="Markdown Common Elements" /><published>2016-02-24T22:44:00+05:30</published><updated>2016-02-24T22:44:00+05:30</updated><id>http://localhost:4000/markdown-common-elements</id><content type="html" xml:base="http://localhost:4000/markdown-common-elements/">&lt;h2 id=&quot;basic-formatting&quot;&gt;Basic formatting&lt;/h2&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;310&quot; src=&quot;https://www.youtube.com/embed/r7XhWUDj-Ts&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>jamesfoster</name></author><category term="blog" /><category term="markdown" /><category term="components" /><category term="extra" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Markdown Common Elements</title><link href="http://localhost:4000/markdown-common-elements/" rel="alternate" type="text/html" title="Markdown Common Elements" /><published>2008-02-24T22:44:00+05:30</published><updated>2008-02-24T22:44:00+05:30</updated><id>http://localhost:4000/markdown-common-elements</id><content type="html" xml:base="http://localhost:4000/markdown-common-elements/">&lt;h2 id=&quot;basic-formatting&quot;&gt;Basic formatting&lt;/h2&gt;
 
 &lt;p&gt;This note &lt;strong&gt;demonstrates&lt;/strong&gt; some of what &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; is &lt;em&gt;capable of doing&lt;/em&gt;.&lt;/p&gt;
 
