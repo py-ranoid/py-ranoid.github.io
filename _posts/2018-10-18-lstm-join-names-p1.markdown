@@ -226,7 +226,7 @@ for i in ['mar','ram','seb']:
 Great! We have a model that can generate fake names. Now all you need is a fake address and empty passport. *Jk*. 
 
 
-In the next blog, I'll explain how you can use this model to join two words by finding the best bridge.
+In the [next blog](http://vishalgupta.me/lstm-join-names-p2), I'll explain how you can use this model to join two words by finding the best bridge.
 
 
 ---
