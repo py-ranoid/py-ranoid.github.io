@@ -12,10 +12,10 @@ description: "Using sequential deep learning models to join two names, ie, Brad 
 category: blog
 author: Vishal Gupta
 externalLink: false
----
-Often, I find myself making [portmateaus](https://dictionary.cambridge.org/dictionary/english/portmanteau-word) from verbs, names, adjectives and pretty much any word I think too much about. Some times to shrink phrases, and some times to name a product or app; occasionally, to ship couples. And as someone who loves tinkering with AI, I wondered if it was possible to write an algorithm to do it... and here we are. The first part, this blog is about training a model that can generate artificial names with a character-level LSTM. 
+--- 
+Often, I find myself making [portmateaus](https://dictionary.cambridge.org/dictionary/english/portmanteau-word) from verbs, names, adjectives and pretty much any word I think too much about. Sometimes to shrink phrases, and sometimes to name a product or app; occasionally, to ship couples. And as someone who loves tinkering with AI, I wondered if it was possible to write an algorithm to do it… and here we are. The first part, this blog is about training a model that can generate artificial names with a character-level LSTM.
 
-If you're new to LSTMs, RNNs, or sequential models, here are a few resources that can help you learn and get started : 
+If you’re new to LSTMs, RNNs, or sequential models, here are a few resources that can help you learn and get started: 
 [bit.ly/SeqModelsResources](http://bit.ly/SeqModelsResources). 
 
 # Part 1 : Training a Name-Generating LSTM
@@ -159,7 +159,7 @@ def get_model(num_chars):
 - Picking the element with the greatest probability will always return the same character for a given sequence
 - I'd like to induce some variance by sampling from a probability array instead.
 
-To explain this better, here's an excerpt  from Andrej Karpathy's blog aobut CharRNNs : 
+To explain this better, here's an excerpt  from Andrej Karpathy's blog about CharRNNs : 
 > Temperature. We can also play with the temperature of the Softmax during sampling. Decreasing the **temperature from 1 to some lower number (e.g. 0.5) makes the RNN more confident, but also more conservative** in its samples. Conversely, **higher temperatures will give more diversity but at cost of more mistakes** (e.g. spelling mistakes, etc).    
 
 ```python
@@ -223,7 +223,7 @@ for i in ['mar','ram','seb']:
 
 ---
 
-Great! We have a model that can generate fake names. Now all you need is a fake address and empty passport. *Jk*. 
+Great! We have a model that can generate fake names. Now all you need is a fake address and an empty passport. *Jk*. 
 
 
 In the [next blog](http://vishalgupta.me/lstm-join-names-p2), I'll explain how you can use this model to join two words by finding the best bridge.

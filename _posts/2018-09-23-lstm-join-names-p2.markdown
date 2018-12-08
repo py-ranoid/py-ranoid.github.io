@@ -15,8 +15,8 @@ externalLink: false
 ---
 # Part 2 : Joining Names using our LSTM
 Now that we have an LSTM to generate names, we can use it to bridge two words. Since the model can predict likeliness of 27 characters succeeding a given sequence of letters, we can use it find the bridge between two words. We define a bridge as : 
-- Let `m` = Length of left word, `L`
-- Let `n` = Length of right word, `R`
+- Let `m` = Length of the left word, `L`
+- Let `n` = Length of the right word, `R`
 - Then `Bridge(L,R) = (i,j)`, `i <= m` & `j <= n` 
 - Where `i` is the end index of the left word in the portmanteau and `j` is the start index of the right word in the portmanteau.
 - Hence... `Join(L,R) = L[:i] + R[j:]`
@@ -69,13 +69,13 @@ def ohmygauss(length, sigma=1.8):
 ```
 
 ## Getting bridge scores
-1. Iterate over all sequences of 3 (`SEQLEN`) characters in left word. (`MINLEFT -> n`)
-    1. Iterate over all sequences of 3 (`COMPARE`) characters in right word. (`0 -> MINRIGHT`)
+1. Iterate over all sequences of 3 (`SEQLEN`) characters in the left word. (`MINLEFT -> n`)
+    1. Iterate over all sequences of 3 (`COMPARE`) characters in the right word. (`0 -> MINRIGHT`)
         1. Get probability that given character in right word will follow sequence from word
         2. Repeat for `COMPARE` sequences.</br>
         For example : to bridge **britain** and **exit** at `_br+exit`, <br>
          Score : `prob(e|"_br")*w1 + prob(x|"bre")*w2 + prob(i|"rex")*w3`
-        3. Multiply Gaussian factors to score to prioritize words that are bridges towards the beggining of the right word
+        3. Multiply Gaussian factors to score to prioritize words that are bridges towards the beginning of the right word
 
 ```python
 MINLEFT = 3
