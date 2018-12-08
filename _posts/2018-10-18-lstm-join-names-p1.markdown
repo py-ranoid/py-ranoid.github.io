@@ -1,7 +1,7 @@
 ---
-title: " Generating Couple Names (Portmanteau) with LSTMs : Part 1"
+title: "Using LSTMs to join words (Portmanteaus): Part 1"
 layout: post
-date: 2008-09-23 08:36
+date: 2018-12-08 18:55
 tag: 
 - ml
 image: ../assets/images/link.png
@@ -13,8 +13,30 @@ category: blog
 author: Vishal Gupta
 externalLink: false
 ---
+Often, I find myself making [portmateaus](https://dictionary.cambridge.org/dictionary/english/portmanteau-word) from verbs, names, adjectives and pretty much any word I think too much about. Some times to shrink phrases, and some times to name a product or app; occasionally, to ship couples. And as someone who loves tinkering with AI, I wondered if it was possible to write an algorithm to do it... and here we are. The first part, this blog is about training a model that can generate artificial names with a character-level LSTM. 
+
+If you're new to LSTMs, RNNs, or sequential models, here are a few resources that can help you learn and get started : 
+[bit.ly/SeqModelsResources](http://bit.ly/SeqModelsResources). 
+
 # Part 1 : Training a Name-Generating LSTM
-First, we need to train an LSTM on a large dataset of names, so it can generate artificial names by predicting the nth character given (n-1) characters of a name.
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img src = "http://karpathy.github.io/assets/rnn/charseq.jpeg">        
+    </div>
+
+    <div class="toright">
+        <ul>
+        <li> First, we need to train an LSTM on a large dataset of names, so it can generate artificial names by predicting the nth character given (n-1) characters of a name. </li>
+        <li> In the image on the left, we have a character-level RNN with accepts and predicts 1 of 4 characters ('h','e','l' and 'o').  </li>
+        <li> Hence it has 4-dimensional input and output layers, and a hidden layer of 3 units (neurons). </li>
+        <li> The output layer contains confidences the RNN assigns for the next character (vocabulary is "h,e,l,o") </li>
+        <li> We want the green numbers to be high and red numbers to be low (in the output layer). </li>
+        </ul>
+        <br>
+        Image Credits : <a href = "http://karpathy.github.io/2015/05/21/rnn-effectiveness/">Andrej Karpathy</a>
+    </div>
+</div>
 
 ## Imports 
 
@@ -34,28 +56,24 @@ Baby Names from Social Security Card Applications - National Level Data
 
 ## Loading and pre-processing data. 
 
-Declaring `SEQLEN` and `STEP` :
-`SEQLEN` is the number of characters our LSTM uses to predict the next character</br>
-`STEP` number of letters to skip between two samples
-
+```python
+SEQLEN = 3 # No. of chars our LSTM uses to predict the next character
+STEP = 1 # No. of letters to skip between two samples
+```
 Hence, the name `PETER` is used to generate the following samples :
 
 | X1  |  X2  | X3  | Y  |
-|--:|---|---|---|
-| -  | - | P  | **E**  |
-| -  | P | E  | **T**  |
-| P | E | T  | **E**  |
-| E  | T | E  | **R**  |
-| T  | E | R  | **-**  |
+|---:|---:|---:|---:|
+| -  | - | P  |  **E**  |
+| -  | P | E  |  **T**  |
+| P  | E | T  |  **E**  |
+| E  | T | E  |  **R**  |
+| T  | E | R  |  **-**  |
 
-```python
-SEQLEN = 3
-STEP = 1
-```
-
-- Loading names from `NationalNames.csv`
-- Eliminating names shorter than 4 chars and having frequency less than 3
-- Joining (seperating) names with `\n`
+We need to do this for all names in our dataset. 
+- Load names from `NationalNames.csv`
+- Eliminate names shorter than 4 chars and having frequency less than 3
+- Join (seperating) names with `\n`
 
 ```python
 def get_data():
@@ -69,7 +87,7 @@ def get_data():
     return text,chars
 ```
 
-- Splitting text into `sequences` of 3 characters (X) and adding next character to `next_chars` (y)
+- Split text into `sequences` of 3 characters (X) and adding next character to `next_chars` (y)
 
 ```python
 def get_seq(args):
@@ -134,15 +152,15 @@ def get_model(num_chars):
     return model
 ```
 
+
+<img src = "../assets/images/keras_lstm.png">
+
 ## Sampling with our model
 - Picking the element with the greatest probability will always return the same character for a given sequence
 - I'd like to induce some variance by sampling from a probability array instead.
 
 To explain this better, here's an excerpt  from Andrej Karpathy's blog aobut CharRNNs : 
-> Temperature. We can also play with the temperature of the Softmax during sampling. Decreasing the **temperature from 1 to some lower number (e.g. 0.5) makes the RNN more confident, but also more conservative** in its samples. Conversely, **higher temperatures will give more diversity but at cost of more mistakes** (e.g. spelling mistakes, etc). In particular, setting temperature very near zero will give the most likely thing that Paul Graham might say:
-
-> *“is that they were all the same thing that was a startup is that they were all the same thing that was a startup is that they were all the same thing that was a startup is that they were all the same”*
-
+> Temperature. We can also play with the temperature of the Softmax during sampling. Decreasing the **temperature from 1 to some lower number (e.g. 0.5) makes the RNN more confident, but also more conservative** in its samples. Conversely, **higher temperatures will give more diversity but at cost of more mistakes** (e.g. spelling mistakes, etc).    
 
 ```python
 def sample(preds, temperature=1.0):
@@ -204,5 +222,11 @@ for i in ['mar','ram','seb']:
     Seed: "seb"	Names : ['sebeexenn', 'sebrinx', 'seby', 'sebrey', 'seberle']  
 
 ---
+
+Great! We have a model that can generate fake names. Now all you need is a fake address and empty passport. *Jk*. 
+
+
+In the next blog, I'll explain how you can use this model to join two words by finding the best bridge.
+
 
 ---
