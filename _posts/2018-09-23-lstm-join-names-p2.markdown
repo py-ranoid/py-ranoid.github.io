@@ -7,12 +7,13 @@ tag:
 image: ../assets/images/link.png
 headerImage: true
 projects: false
-hidden: false
+hidden: false(
 description: "Using sequential deep learning models to join two names, ie, Brad + Angelina = Brangelina"
 category: blog
 author: Vishal Gupta
 externalLink: false
 ---
+[Part 1 - Training a Name-Generating LSTM](http://vishalgupta.me/lstm-join-names-p1)
 # Part 2 : Joining Names using our LSTM
 Now that we have an LSTM to generate names, we can use it to bridge two words. Since the model can predict likeliness of 27 characters succeeding a given sequence of letters, we can use it find the bridge between two words. We define a bridge as : 
 - Let `m` = Length of the left word, `L`
