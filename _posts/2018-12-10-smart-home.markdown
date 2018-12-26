@@ -1,7 +1,7 @@
 ---
 title: " DIY Smart Home : Google Home + Rapberry Pi"
 layout: post
-date: 2008-09-23 08:36
+date: 2018-12-26 17:36
 tag:
 - python
 - iot
@@ -17,7 +17,7 @@ externalLink: false
 ---
 <iframe width="100%" height = "350" src="https://www.youtube.com/embed/jAB0Iscjj68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Imagine. You're snug and warm in your bed, and are about to happily doze off when you realize- you've forgotten to turn your lights off. Don't worry though- it's possible for you to do so without climbing out of those warm sheets. Here's how you can set up your room to be infinitely cooler.
+Imagine. You're snug and warm in your bed, and are about to happily doze off when you realize- you've forgotten to turn your lights off. Don't worry though- it's possible for you to do so without climbing out of those soft sheets. Here's how you can set up your room to be infinitely cooler.
 
 # What you'll need
 1. [Google Home](https://store.google.com/product/google_home
@@ -29,13 +29,13 @@ Imagine. You're snug and warm in your bed, and are about to happily doze off whe
 
 
 *Optional Items*
-- Raspberry Pi Case. <br> Note : Make sure your case does not cover the GPIO ports.
+- Raspberry Pi Case <br> Note : Make sure your case does not cover the GPIO ports.
 - RPi accessories (only needed the first time)
   - HDMI Cable (to display RPi screen)
   - Micro USB Charger (to power RPi)
   - USB Keyboard and Mouse (to control RPi)
 - If you're tweaking an existing switchboard :
-  - Wire of [appropriate thickness](https://www.thespruce.com/matching-wire-size-to-circuit-amperage-1152865), to connect switch ends to relay.
+  - Wire of [appropriate thickness](https://www.thespruce.com/matching-wire-size-to-circuit-amperage-1152865), to connect switch ends to relay
   - Screwdriver, to open your switchboard and secure wires in the relay)
   - Insulation tape
   - Safety Gloves
@@ -51,7 +51,7 @@ Imagine. You're snug and warm in your bed, and are about to happily doze off whe
 The first thing that you need to do is set up the wiring so that you can programmatically flip the switch using our Raspberry Pi. While it's easy to trigger GPIO ports, they can only emit 5V. In order to close/break a 220V circuit, you need a relay. A relay is an [electromagnetic switch](https://www.explainthatstuff.com/howrelayswork.html) operated by a relatively small electric current that can turn on or off a much larger electric current. This is why you'll hear a clicking sound when the relay is triggered.
 ### 1.0 Setting up your RPi
 - Follow [this](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up) guide to get your Pi running and then [enable SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/).
-- Alternatively, if you don't have a keyboard, mouse and a display, check out this [headless setup](https://howtoraspberrypi.com/how-to-raspberry-pi-headless-setup/)
+- Alternatively, if you don't have a keyboard, mouse and a display, check out this [headless setup](https://howtoraspberrypi.com/how-to-raspberry-pi-headless-setup/).
 - Make sure you enable SSH or VNC to access your RPi using another device on the same LAN.
 
 
@@ -82,8 +82,7 @@ If you'd like to control a switch in an existing wall socket, grab a screwdriver
 ![/assets/images/circuit.png](/assets/images/circuit.png)
 
 ## Step 2 : Controlling switches with HTTP requests
-- You need to run a server on our Pi so that we can interact with it remotely.
-- I'll be using Flask since it's fairly simple
+- You need to run a server on your Pi so that we can interact with it remotely. (I'll be using Flask since it's fairly simple.)
 
 ```python
 from flask import Flask, request, jsonify
@@ -104,7 +103,7 @@ if __name__ == '__main__':
 - However the Flask server can only be accessed locally. Though you can control your switch locally, you can't do it outside your LAN.
 - The easiest way to expose your local servers to the public internet is using secure tunnels.
 - Some options and their free tier features are :
-  - [ngrok](https://ngrok.com/download) : Provides a new subdomain every time client is run. (Infeasible to keep update IFTTT applet's webhook time and again)
+  - [ngrok](https://ngrok.com/download) : Provides a new subdomain every time client is run. (It is infeasible to keep updating IFTTT applet's webhook time and again.)
   - [pagekite](https://pagekite.net/) : Provides custom subdomain for 30 days on verifying email  ID.
 
 
@@ -115,10 +114,10 @@ if __name__ == '__main__':
   or<br>
   ```./ngrok http 80```
 
-Any request sent to your ngrok or pagekite URL should hopefully get tunnelled/forwarded to your flask server
+Any request sent to your ngrok or pagekite URL should hopefully get tunnelled/forwarded to your flask server.
 
 ## Step 3 : Controlling switches with the Google Home/Assistant
-Now that you have a server to control your smart home remotely, you need to call the endpoint using your Google Home. To do this, you will be using [IFTTT](https://ifttt.com/) ie, *If This Then That*, which is a free web-based service to create chains of simple conditional statements, called applets. An applet has 2 components : a trigger (which initiates the action) and the action itself. To bridge the Google Home with our Raspberry Pi, you need to create an IFTTT applet. Download the IFTTT app and connect it to the Google account associated wth your Google Home.
+Now that you have a server to control your smart home remotely, you need to call the endpoint using your Google Home. To do this, you will be using [IFTTT](https://ifttt.com/) ie, *If This Then That*, which is a free web-based service to create chains of simple conditional statements, called applets. An applet has 2 components : a trigger (which initiates the action) and the action itself. To bridge the Google Home with your Raspberry Pi, you need to create an IFTTT applet. Download the IFTTT app and connect it to the Google account associated wth your Google Home.
 ### Setting the Trigger.
 1. Click on New Applet and then "**this**"
 2. Choose *Google Assistant* as the trigger service.
