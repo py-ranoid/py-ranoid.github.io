@@ -1,5 +1,5 @@
 ---
-title: " DIY Smart Home : Google Home + Rapberry Pi"
+title: " DIY Smart Home : Google Home + Raspberry Pi"
 layout: post
 date: 2018-12-26 17:36
 tag:
