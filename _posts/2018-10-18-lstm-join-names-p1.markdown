@@ -2,7 +2,7 @@
 title: "Using LSTMs to join words (Portmanteaus): Part 1"
 layout: post
 date: 2018-12-08 18:55
-tag:
+tag: 
 - ml
 image: ../assets/images/link.png
 headerImage: true
@@ -12,17 +12,17 @@ description: "Using sequential deep learning models to join two names, ie, Brad 
 category: blog
 author: Vishal Gupta
 externalLink: false
----
+--- 
 Often, I find myself making [portmateaus](https://dictionary.cambridge.org/dictionary/english/portmanteau-word) from verbs, names, adjectives and pretty much any word I think too much about. Sometimes to shrink phrases, and sometimes to name a product or app; occasionally, to ship couples. And as someone who loves tinkering with AI, I wondered if it was possible to write an algorithm to do it… and here we are. The first part, this blog is about training a model that can generate artificial names with a character-level LSTM.
 
-If you’re new to LSTMs, RNNs, or sequential models, here are a few resources that can help you learn and get started:
-[bit.ly/SeqModelsResources](http://bit.ly/SeqModelsResources).
+If you’re new to LSTMs, RNNs, or sequential models, here are a few resources that can help you learn and get started: 
+[bit.ly/SeqModelsResources](http://bit.ly/SeqModelsResources). 
 
 # Part 1 : Training a Name-Generating LSTM
 
 <div class="side-by-side">
     <div class="toleft">
-        <img src = "http://karpathy.github.io/assets/rnn/charseq.jpeg">
+        <img src = "http://karpathy.github.io/assets/rnn/charseq.jpeg">        
     </div>
 
     <div class="toright">
@@ -38,7 +38,7 @@ If you’re new to LSTMs, RNNs, or sequential models, here are a few resources t
     </div>
 </div>
 
-## Imports
+## Imports 
 
 Importing `pandas`, `numpy`, `random` and `sys`
 ```python
@@ -54,7 +54,7 @@ Baby Names from Social Security Card Applications - National Level Data
 !wget https://raw.githubusercontent.com/jcbain/celeb_baby_names/master/data/NationalNames.csv
 ```
 
-## Loading and pre-processing data.
+## Loading and pre-processing data. 
 
 ```python
 SEQLEN = 3 # No. of chars our LSTM uses to predict the next character
@@ -70,7 +70,7 @@ Hence, the name `PETER` is used to generate the following samples :
 | E  | T | E  |  **R**  |
 | T  | E | R  |  **-**  |
 
-We need to do this for all names in our dataset.
+We need to do this for all names in our dataset. 
 - Load names from `NationalNames.csv`
 - Eliminate names shorter than 4 chars and having frequency less than 3
 - Join (seperating) names with `\n`
@@ -113,7 +113,7 @@ def one_hot(word,char_indices):
     for t, char in enumerate(word):
         x_pred[0, t, char_indices[char]] = 1.
     return x_pred
-
+  
 # Encoding all sequences
 def get_vectors(args):
     sequences,next_chars,chars = args
@@ -159,8 +159,8 @@ def get_model(num_chars):
 - Picking the element with the greatest probability will always return the same character for a given sequence
 - I'd like to induce some variance by sampling from a probability array instead.
 
-To explain this better, here's an excerpt  from Andrej Karpathy's blog about CharRNNs :
-> Temperature. We can also play with the temperature of the Softmax during sampling. Decreasing the **temperature from 1 to some lower number (e.g. 0.5) makes the RNN more confident, but also more conservative** in its samples. Conversely, **higher temperatures will give more diversity but at cost of more mistakes** (e.g. spelling mistakes, etc).
+To explain this better, here's an excerpt  from Andrej Karpathy's blog about CharRNNs : 
+> Temperature. We can also play with the temperature of the Softmax during sampling. Decreasing the **temperature from 1 to some lower number (e.g. 0.5) makes the RNN more confident, but also more conservative** in its samples. Conversely, **higher temperatures will give more diversity but at cost of more mistakes** (e.g. spelling mistakes, etc).    
 
 ```python
 def sample(preds, temperature=1.0):
@@ -219,11 +219,11 @@ for i in ['mar','ram','seb']:
 
     Seed: "mar"	Names : ['marisa', 'maria', 'marthi', 'marvamarra', 'maria']
     Seed: "ram"	Names : ['ramir', 'ramundro', 'ramariis', 'raminyodonami', 'ramariegena']
-    Seed: "seb"	Names : ['sebeexenn', 'sebrinx', 'seby', 'sebrey', 'seberle']
+    Seed: "seb"	Names : ['sebeexenn', 'sebrinx', 'seby', 'sebrey', 'seberle']  
 
 ---
 
-Great! We have a model that can generate fake names. Now all you need is a fake address and an empty passport. *Jk*.
+Great! We have a model that can generate fake names. Now all you need is a fake address and an empty passport. *Jk*. 
 
 
 In the [next blog](http://vishalgupta.me/lstm-join-names-p2), I'll explain how you can use this model to join two words by finding the best bridge.
