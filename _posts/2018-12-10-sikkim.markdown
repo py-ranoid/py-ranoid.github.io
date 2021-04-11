@@ -10,7 +10,7 @@ image: /assets/images/mountain.png
 headerImage: true
 projects: false
 hidden: false
-description: "Voice-activated Switchboard"
+description: "A Guide to the Land of Khangchendzonga"
 category: blog
 author: Vishal Gupta
 externalLink: false
