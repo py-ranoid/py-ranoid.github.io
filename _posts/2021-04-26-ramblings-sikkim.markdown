@@ -16,7 +16,7 @@ author: Vishal Gupta
 externalLink: false
 ---
 
-<img src = "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/46abad117268359.60869d288ec68.jpg" width ="500" align="center">
+<img src = "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/46abad117268359.60869d288ec68.jpg" width ="500" align="center" style ="display: block; margin: 0 auto;">
 
 What I loved the most about Sikkim can’t be captured on cameras. It can’t be taped since it would be intrusive and it can’t be replicated because it’s unique and impromptu. It could be described, as I attempt to, but more importantly, it’s something that you simply have to experience to know.
 
