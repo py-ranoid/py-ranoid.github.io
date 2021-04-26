@@ -16,6 +16,12 @@ resume: true
 resume-external: true
 resume-url: http://bit.ly/vguptaresume-ai
 
+# If you want to include your portfolio, set to true
+# and specify source (external or local).
+portfolio: true
+portfolio-external: true
+portfolio-url: https://vizgupta.myportfolio.com/
+
 url: http://vishalgupta.me
 # your url: http://USERNAME.github.io
 
